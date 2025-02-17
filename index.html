@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam T. - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.344.0/font/lucide.min.css">
+</head>
+<body class="light-mode">
+    <nav>
+        <div class="container nav-container">
+            <h1 class="logo">Adam T.</h1>
+            <div class="nav-links">
+                <a href="#home">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="lucide-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="animate-fade-in">Développeur Web Créatif</h1>
+            <p class="animate-fade-in">Transformant des idées en expériences numériques exceptionnelles</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>À Propos</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Je m'appelle Adam Tahir, et je suis actuellement étudiant en première année à l'École Marocaine des Sciences de l'Ingénieur (EMSI), poursuivant un diplôme en informatique. Parallèlement, j'étudie en première année à la Faculté de Gestion, me spécialisant en Comptabilité, Finance et Fiscalité.</p>
+                    <p>J'ai obtenu mon baccalauréat à Ibnou Al Yasmine, en Sciences Physiques et Chimie avec option Française. Cette formation m'a doté de solides compétences analytiques, que je trouve essentielles dans mes deux domaines d'études.</p>
+                    <p>À l'EMSI, je suis enthousiaste à l'idée d'approfondir ma compréhension de la technologie et de la programmation, tandis que mes études en gestion me permettent d'explorer le côté business de l'industrie.</p>
+                    
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <span class="label">Email:</span>
+                            <span class="value">adamfath597@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Téléphone:</span>
+                            <span class="value">+212 6 25 15 93 98</span>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            <div class="projects-grid">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-content">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
+                <div class="social-links">
+                    <a href="https://github.com/adam-t16" target="_blank" rel="noopener noreferrer">
+                        <i class="lucide-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <i class="lucide-linkedin"></i>
+                    </a>
+                    <a href="mailto:adamfath597@gmail.com">
+                        <i class="lucide-mail"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Adam T. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
