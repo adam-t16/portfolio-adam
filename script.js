@@ -41,36 +41,114 @@ const projects = [
         image: "https://images.unsplash.com/photo-1487933480173-6d82b60b8d4e?w=800&auto=format&fit=crop&q=60",
         live: "#",
         github: "https://github.com/adam-t16"
+    },
+    {
+        title: "خُطوة نحو الطريق المستقيم",
+        description: "Educational and spiritual website guiding towards the right path",
+        image: "https://images.unsplash.com/photo-1516534775068-bb57100d4f10?w=800&auto=format&fit=crop&q=60",
+        live: "https://adam-t16.github.io/pasversdieu/",
+        github: "https://github.com/adam-t16/pasversdieu"
+    },
+    {
+        title: "Card Matching Game",
+        description: "Interactive memory game with matching cards",
+        image: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&auto=format&fit=crop&q=60",
+        live: "https://adam-t16.github.io/CARD_MATCHING/",
+        github: "https://github.com/adam-t16/CARD_MATCHING"
+    },
+    {
+        title: "Labyrinthe des Idées",
+        description: "Interactive maze game with problem-solving elements",
+        image: "https://images.unsplash.com/photo-1605870445919-838d190e8e1b?w=800&auto=format&fit=crop&q=60",
+        live: "https://adam-t16.github.io/Labyrinthe-des-Idees/",
+        github: "https://github.com/adam-t16/Labyrinthe-des-Idees"
+    },
+    {
+        title: "Les Recettes de Maman",
+        description: "Collection of traditional family recipes",
+        image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=800&auto=format&fit=crop&q=60",
+        live: "https://adam-t16.github.io/LESRECETTES-DE-MAMAN/",
+        github: "https://github.com/adam-t16/LESRECETTES-DE-MAMAN"
+    },
+    {
+        title: "متتبع القرآن",
+        description: "Platform for tracking Quran memorization and revision",
+        image: "https://images.unsplash.com/photo-1507842217343-583f20270319?w=800&auto=format&fit=crop&q=60",
+        live: "https://adam-t16.github.io/-/#home",
+        github: "https://github.com/adam-t16/-"
+    },
+    {
+        title: "Calculateur d'Épargne",
+        description: "Savings calculator and financial planning tool",
+        image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&auto=format&fit=crop&q=60",
+        live: "https://adam-t16.github.io/epargne2/",
+        github: "https://github.com/adam-t16/epargne2"
+    },
+    {
+        title: "Easy Visa",
+        description: "Guide and assistance for visa procedures",
+        image: "https://images.unsplash.com/photo-1540126034813-121bf29033d2?w=800&auto=format&fit=crop&q=60",
+        live: "https://adam-t16.github.io/easy-visa/",
+        github: "https://github.com/adam-t16/easy-visa"
+    },
+    {
+        title: "Journal de Recettes",
+        description: "Application for tracking culinary recipes",
+        image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=800&auto=format&fit=crop&q=60",
+        live: "https://adam-t16.github.io/journal-reccette/",
+        github: "https://github.com/adam-t16/journal-reccette"
+    },
+    {
+        title: "Todo App",
+        description: "Simple and effective task management application",
+        image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&auto=format&fit=crop&q=60",
+        live: "https://adam-t16.github.io/todo/",
+        github: "https://github.com/adam-t16/todo"
     }
 ];
 
 // Populate Projects
 function populateProjects() {
-    const projectsGrid = document.querySelector('.projects-grid');
-    projectsGrid.innerHTML = '';
+    const featuredProjectsGrid = document.querySelector('#featured-projects');
+    const allProjectsGrid = document.querySelector('#all-projects');
     
-    projects.forEach(project => {
-        const projectCard = document.createElement('div');
-        projectCard.className = 'project-card';
-        
-        projectCard.innerHTML = `
-            <img src="${project.image}" alt="${project.title}" class="project-image">
-            <div class="project-info">
-                <h3>${project.title}</h3>
-                <p>${project.description}</p>
-                <div class="project-links">
-                    <a href="${project.live}" target="_blank" rel="noopener noreferrer">
-                        <i class="lucide-external-link"></i> Demo
-                    </a>
-                    <a href="${project.github}" target="_blank" rel="noopener noreferrer">
-                        <i class="lucide-github"></i> Code
-                    </a>
-                </div>
-            </div>
-        `;
-        
-        projectsGrid.appendChild(projectCard);
+    // Show first 6 as featured
+    const featuredProjects = projects.slice(0, 6);
+    const otherProjects = projects.slice(6);
+    
+    featuredProjects.forEach(project => {
+        const projectCard = createProjectCard(project);
+        featuredProjectsGrid.appendChild(projectCard);
     });
+    
+    // Show remaining as "All Projects"
+    otherProjects.forEach(project => {
+        const projectCard = createProjectCard(project);
+        allProjectsGrid.appendChild(projectCard);
+    });
+}
+
+function createProjectCard(project) {
+    const projectCard = document.createElement('div');
+    projectCard.className = 'project-card';
+    
+    projectCard.innerHTML = `
+        <img src="${project.image}" alt="${project.title}" class="project-image">
+        <div class="project-info">
+            <h3>${project.title}</h3>
+            <p>${project.description}</p>
+            <div class="project-links">
+                <a href="${project.live}" target="_blank" rel="noopener noreferrer">
+                    <i class="lucide-external-link"></i> Demo
+                </a>
+                <a href="${project.github}" target="_blank" rel="noopener noreferrer">
+                    <i class="lucide-github"></i> Code
+                </a>
+            </div>
+        </div>
+    `;
+    
+    return projectCard;
 }
 
 // Theme Toggle
