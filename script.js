@@ -1,77 +1,46 @@
 // Projects Data
 const projects = [
     {
-        title: "خُطوة نحو الطريق المستقيم",
-        description: "Site web éducatif et spirituel pour guider vers le droit chemin",
-        image: "خُطوة نحو الطريق المستقيم.jpg",
-        live: "https://adam-t16.github.io/pasversdieu/",
-        github: "https://github.com/adam-t16/pasversdieu"
-    },
-    /*
-{
-    title: "خُطوة نحو التوبة",
-    description: "Site web spirituel pour l'accompagnement vers la repentance",
-    image: "التوبة.jpg",
-    github: "https://github.com/adam-t16/pasversdieu"
-},
-*/
-
-    {
-        title: "Card Matching Game",
-        description: "Jeu de mémoire interactif avec des cartes à associer",
-        image: "Card Matching Game.jpg",
-        live: "https://adam-t16.github.io/CARD_MATCHING/",
-        github: "https://github.com/adam-t16/CARD_MATCHING"
+        title: "EchoWall / SilentGuard",
+        description: "Système de surveillance intelligent sans caméra utilisant des capteurs multiples pour détecter les chutes, mouvements et événements inhabituels",
+        image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&auto=format&fit=crop&q=60",
+        live: "#",
+        github: "https://github.com/adam-t16"
     },
     {
-        title: "Labyrinthe des Idées",
-        description: "Jeu de labyrinthe interactif avec des éléments de résolution de problèmes",
-        image: "https://images.unsplash.com/photo-1605870445919-838d190e8e1b?w=800&auto=format&fit=crop&q=60",
-        live: "https://adam-t16.github.io/Labyrinthe-des-Idees/",
-        github: "https://github.com/adam-t16/Labyrinthe-des-Idees"
+        title: "Système de Gestion Mini-marché",
+        description: "Plateforme web de gestion conçue autour d'un vrai mini-marché avec gestion de stock, produits et calcul de profit",
+        image: "https://images.unsplash.com/photo-1460925895917-adf4e9a9bb5f?w=800&auto=format&fit=crop&q=60",
+        live: "#",
+        github: "https://github.com/adam-t16"
     },
     {
-        title: "Les Recettes de Maman",
-        description: "Collection de recettes familiales traditionnelles",
-        image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=800&auto=format&fit=crop&q=60",
-        live: "https://adam-t16.github.io/LESRECETTES-DE-MAMAN/",
-        github: "https://github.com/adam-t16/LESRECETTES-DE-MAMAN"
+        title: "FIZYX — E-commerce Streetwear",
+        description: "Projet e-commerce front-end avec panier, interactions utilisateur et design responsive",
+        image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&auto=format&fit=crop&q=60",
+        live: "#",
+        github: "https://github.com/adam-t16"
     },
     {
-        "title": "متتبع القرآن",
-        "description": "Une plateforme pour suivre la mémorisation et la révision du Coran",
-        "image": "متتبع القرآن.jpg",
-        "live": "https://adam-t16.github.io/-/#home",
-        "github": "https://github.com/adam-t16/-"
-    },
-    
-    {
-        title: "Calculateur d'Épargne",
-        description: "Outil de calcul d'épargne et de planification financière",
-        image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&auto=format&fit=crop&q=60",
-        live: "https://adam-t16.github.io/epargne2/",
-        github: "https://github.com/adam-t16/epargne2"
+        title: "Barrière Automatique — Arduino",
+        description: "Projet d'automatisation Arduino utilisant capteurs et moteur pour contrôle de barrière",
+        image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=800&auto=format&fit=crop&q=60",
+        live: "#",
+        github: "https://github.com/adam-t16"
     },
     {
-        title: "Easy Visa",
-        description: "Guide et assistance pour les procédures de visa",
-        image: "https://images.unsplash.com/photo-1540126034813-121bf29033d2?w=800&auto=format&fit=crop&q=60",
-        live: "https://adam-t16.github.io/easy-visa/",
-        github: "https://github.com/adam-t16/easy-visa"
+        title: "Portail Automatisé — Arduino",
+        description: "Système de portail automatisé en C++ avec capteurs et moteur pour contrôle d'accès",
+        image: "https://images.unsplash.com/photo-1518611505868-48510c8dfa93?w=800&auto=format&fit=crop&q=60",
+        live: "#",
+        github: "https://github.com/adam-t16"
     },
     {
-        title: "Journal de Recettes",
-        description: "Application de suivi des recettes culinaires",
-        image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=800&auto=format&fit=crop&q=60",
-        live: "https://adam-t16.github.io/journal-reccette/",
-        github: "https://github.com/adam-t16/journal-reccette"
-    },
-    {
-        title: "Todo App",
-        description: "Application de gestion de tâches simple et efficace",
-        image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&auto=format&fit=crop&q=60",
-        live: "https://adam-t16.github.io/todo/",
-        github: "https://github.com/adam-t16/todo"
+        title: "Site Garage",
+        description: "Site web responsive pour garage automobile avec présentation des services et interface mobile-friendly",
+        image: "https://images.unsplash.com/photo-1487933480173-6d82b60b8d4e?w=800&auto=format&fit=crop&q=60",
+        live: "#",
+        github: "https://github.com/adam-t16"
     }
 ];
 
